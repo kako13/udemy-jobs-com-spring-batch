@@ -37,12 +37,9 @@ public class BatchConfig {
     @Bean
     @StepScope
     public Tasklet imprimeOlaTasklet(@Value("#{jobParameters['nome']}") String nome) {
-        return new Tasklet() {
-            @Override
-            public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-                System.out.printf("Olá, %s!%n", nome);
-                return RepeatStatus.FINISHED;
-            }
+        return (contribution, chunkContext) -> {
+            System.out.printf("Olá, %s!%n", nome);
+            return RepeatStatus.FINISHED;
         };
     }
 }
