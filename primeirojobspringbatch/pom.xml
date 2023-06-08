@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy</groupId>
-	<artifactId>primeiroprojetospringbatch</artifactId>
+	<artifactId>primeirojobspringbatch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>primeiroprojetospringbatch</name>
 	<description>Projeto do curso da Udemy - Jobs com Spring Batch</description>
