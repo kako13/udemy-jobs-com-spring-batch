@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 public class ParImparBatchConfig {
 
 	public static final int QUANTIDADE_ELEMENTOS_INTEIROS = 30000;
-	public static final int TAMANHO_CHUNK = 30;
+	public static final int TAMANHO_CHUNK = 10000;
 
 	@Bean
 	public Job imprimeParImparJob(JobRepository jobRepository, Step step) {
@@ -37,14 +37,14 @@ public class ParImparBatchConfig {
 	public Step imprimeParImparStep(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
         return new StepBuilder("imprimeParImparStep", jobRepository)
 				.chunk(TAMANHO_CHUNK, transactionManager)
-				.reader(contaAteDezReader())
+				.reader(contaAteNReader())
 				.processor(parOuImparProcessor())
 				.writer(imprimeWriter())
 				.build();
 	}
 
 
-	public IteratorItemReader<Integer> contaAteDezReader() {
+	public IteratorItemReader<Integer> contaAteNReader() {
 		Vector<Integer> vetorPosicoes = new Vector<>();
 		vetorPosicoes.setSize(QUANTIDADE_ELEMENTOS_INTEIROS);
 		List<Integer> elementos = geraListaDeInteirosRandomicos(vetorPosicoes);
