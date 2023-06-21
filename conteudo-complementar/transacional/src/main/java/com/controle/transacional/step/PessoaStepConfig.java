@@ -1,7 +1,8 @@
 package com.controle.transacional.step;
 
+import com.controle.transacional.listener.ContadorChunkListener;
+import com.controle.transacional.listener.TotalizadorStepListener;
 import com.controle.transacional.model.Pessoa;
-import org.springframework.batch.core.ChunkListener;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
@@ -21,12 +22,14 @@ public class PessoaStepConfig {
                            PlatformTransactionManager transactionManager,
                            ItemReader<Pessoa> reader,
                            ItemWriter writer,
-                           ChunkListener listener) {
+                           TotalizadorStepListener stepListener,
+                           ContadorChunkListener chunkListener) {
         return new StepBuilder("stepPessoa", jobRepository)
                 .chunk(TAMANHO_CHUNK, transactionManager)
+                .listener(stepListener)
+                .listener(chunkListener)
                 .reader(reader)
                 .writer(writer)
-                .listener(listener)
                 .build();
     }
 }
