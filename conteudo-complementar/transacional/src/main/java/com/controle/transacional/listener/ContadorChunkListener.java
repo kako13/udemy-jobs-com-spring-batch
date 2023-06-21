@@ -16,16 +16,29 @@ public class ContadorChunkListener implements ChunkListener {
 
         ChunkListener.super.afterChunk(context);
 
-
-//        long readCount = context.getStepContext().getStepExecution().getReadCount();
-//        long writeCount = context.getStepContext().getStepExecution().getWriteCount();
-        Integer chunk = context.getStepContext().getStepExecution().getVersion();
-//        AnsiConsole.out().println(Ansi.ansi().fg(Ansi.Color.GREEN).a("Chunk: " + ((chunk - 1)) + " concluído"));
+        long chunk = context.getStepContext().getStepExecution().getCommitCount();
         AnsiConsole.out().install();
-        AnsiConsole.out.print("\r" + Ansi.ansi().eraseLine().a("Chunk número: " + ((chunk - 1)) + " concluído").reset());
+
+        AnsiConsole.out.print("\r" + Ansi.ansi().eraseLine().a("Número de chunks concluídos " + geraSeta(chunk) + "\t" +(chunk)).reset());
         AnsiConsole.out.flush();
-//        System.out.print("Chunk: " + ((chunk - 1)) + " concluído");
-//        System.out.println();
-//        System.out.flush();
+
+
+        AnsiConsole.out().uninstall();
+    }
+
+    private String geraSeta(Long numero) {
+
+        // Reduzindo o número para o intervalo de 1 a 10
+        long resultado = ((numero - 1) % 10) + 1;
+
+        StringBuilder seta = new StringBuilder();
+        for (int i = 1; i <= 10; i++) {
+            if (i == resultado) {
+                seta.append("->");
+            } else {
+                seta.append(" ");
+            }
+        }
+        return seta.toString();
     }
 }
