@@ -1,13 +1,9 @@
 package com.controle.transacional.listener;
 
-import lombok.SneakyThrows;
-import org.fusesource.jansi.Ansi;
-import org.fusesource.jansi.AnsiConsole;
-import org.springframework.batch.core.*;
+import org.springframework.batch.core.ExitStatus;
+import org.springframework.batch.core.StepExecution;
+import org.springframework.batch.core.StepExecutionListener;
 import org.springframework.stereotype.Component;
-
-import java.time.Duration;
-import java.time.LocalDateTime;
 
 @Component
 public class TotalizadorStepListener implements StepExecutionListener {
