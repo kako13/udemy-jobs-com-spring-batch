@@ -1,7 +1,6 @@
 package com.controle.transacional.writer;
 
 import com.controle.transacional.model.Pessoa;
-import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider;
 import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder;
@@ -23,7 +22,7 @@ public class ItemWriterConfig {
     }
 
     @Bean
-    public ItemWriter<Pessoa> writerPessoaDb1(@Qualifier("xaDB1") DataSource dataSource) {
+    public ItemWriter<Pessoa> writerPessoaDb1(@Qualifier("db1AppDS") DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Pessoa>()
                 .dataSource(dataSource)
                 .sql("INSERT INTO pessoa (id, nome, email, data_nascimento, idade) VALUES (:id, :nome, :email, :dataNascimento, :idade)")
@@ -31,7 +30,7 @@ public class ItemWriterConfig {
                 .build();
     }
     @Bean
-    public ItemWriter<Pessoa> writerPessoaDb2(@Qualifier("xaDB2") DataSource dataSource) {
+    public ItemWriter<Pessoa> writerPessoaDb2(@Qualifier("db2AppDS") DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Pessoa>()
                 .dataSource(dataSource)
                 .sql("INSERT INTO pessoa (id, nome, email, data_nascimento, idade) VALUES (:id, :nome, :email, :dataNascimento, :idade)")
