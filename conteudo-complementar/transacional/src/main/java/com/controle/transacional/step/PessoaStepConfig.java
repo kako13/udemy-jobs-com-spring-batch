@@ -20,7 +20,7 @@ public class PessoaStepConfig {
 
     @Bean
     public Step stepPessoa(JobRepository jobRepository,
-                           PlatformTransactionManager transactionManager,
+                           @Qualifier("jtaTransactionManager") PlatformTransactionManager transactionManager,
                            ItemReader<Pessoa> reader,
                            ItemWriter writer,
                            TotalizadorStepListener stepListener,
