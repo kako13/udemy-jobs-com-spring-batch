@@ -18,6 +18,7 @@
 	</properties>
 	<dependencies>
 
+		<!-- controle da saída do console -->
 		<dependency>
 			<groupId>org.fusesource.jansi</groupId>
 			<artifactId>jansi</artifactId>
