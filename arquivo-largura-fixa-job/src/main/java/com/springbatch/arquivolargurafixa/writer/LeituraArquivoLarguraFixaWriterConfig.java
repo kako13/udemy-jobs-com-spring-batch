@@ -22,6 +22,8 @@ public class LeituraArquivoLarguraFixaWriterConfig {
 //			else
 //				System.out.println("Cliente ignorado: " + cliente);
 //		}
+
+
 //	};
 	}
 }
