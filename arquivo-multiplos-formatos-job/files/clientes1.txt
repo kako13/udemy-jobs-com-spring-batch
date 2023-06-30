@@ -7,3 +7,4 @@
 1,t3c2,Sofá,1099,99      
 0,José,Silva,20,jose@test.com
 1,t1c3,Comida no Ifood,500.45
+0,Cliente,Sem Transações,20,semtransacoes@test.com
