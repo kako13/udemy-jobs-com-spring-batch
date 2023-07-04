@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <nome>João</nome>
+        <sobrenome>da Silva</sobrenome>
+        <idade>30</idade>
+        <email>joao@test.com</email>
+        <transacoes>
+            <transacao>
+                <id>t1c1</id>
+                <descricao>Compra de carro</descricao>
+                <valor>50000.0</valor>
+            </transacao>
+            <transacao>
+                <id>t2c1</id>
+                <descricao>TV</descricao>
+                <valor>1500.0</valor>
+            </transacao>
+        </transacoes>
+    </cliente>
+    <cliente>
+        <nome>Maria</nome>
+        <sobrenome>Rodrigues</sobrenome>
+        <idade>60</idade>
+        <email>mr@test.com</email>
+        <transacoes>
+            <transacao>
+                <id>t1c2</id>
+                <descricao>Compra de caixa de chocolate</descricao>
+                <valor>50.0</valor>
+            </transacao>
+            <transacao>
+                <id>t2c2</id>
+                <descricao>Celular</descricao>
+                <valor>4300.0</valor>
+            </transacao>
+        </transacoes>
+    </cliente>
+</clientes>
