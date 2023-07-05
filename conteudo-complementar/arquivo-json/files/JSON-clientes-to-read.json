@@ -1,0 +1,42 @@
+[
+  {
+    "clientes": [
+      {
+        "nome": "João",
+        "sobrenome": "da Silva",
+        "idade": 30,
+        "email": "joao@test.com",
+        "transacoes": [
+          {
+            "id": "t1c1",
+            "descricao": "Compra de carro",
+            "valor": 50000
+          },
+          {
+            "id": "t2c1",
+            "descricao": "TV",
+            "valor": 1500
+          }
+        ]
+      },
+      {
+        "nome": "Maria",
+        "sobrenome": "Rodrigues",
+        "idade": 60,
+        "email": "mr@test.com",
+        "transacoes": [
+          {
+            "id": "t1c2",
+            "descricao": "Compra de caixa de chocolate",
+            "valor": 50
+          },
+          {
+            "id": "t2c2",
+            "descricao": "Celular",
+            "valor": 4300
+          }
+        ]
+      }
+    ]
+  }
+]
