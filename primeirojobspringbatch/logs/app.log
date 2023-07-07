@@ -1,0 +1,224 @@
+2023-06-09 22:09:09,690 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 36628 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-09 22:09:09,696 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 22:09:10,187 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-09 22:09:10,335 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 22:09:10,678 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fd05028
+2023-06-09 22:09:10,679 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 22:09:10,935 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 1.625 seconds (process running for 2.19)
+2023-06-09 22:09:11,167 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=10, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-09 22:09:11,226 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-09 22:09:11,291 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 65ms
+2023-06-09 22:09:11,326 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=10, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 138ms
+2023-06-09 22:09:11,329 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-09 22:09:11,341 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-10 00:56:40,500 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 14364 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-10 00:56:40,507 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-10 00:56:40,998 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-10 00:56:41,165 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-10 00:56:41,542 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fb392c4
+2023-06-10 00:56:41,543 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-10 00:56:41,846 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 1.779 seconds (process running for 2.353)
+2023-06-10 00:56:42,052 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=11, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-10 00:56:42,130 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-10 00:56:42,198 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 68ms
+2023-06-10 00:56:42,239 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=11, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 162ms
+2023-06-10 00:56:42,242 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-10 00:56:42,259 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-13 00:57:34,141 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 27600 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-13 00:57:34,148 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-13 00:57:34,609 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-13 00:57:34,754 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-13 00:57:35,173 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fb392c4
+2023-06-13 00:57:35,174 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-13 00:57:35,513 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 1.919 seconds (process running for 2.453)
+2023-06-13 00:57:35,673 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=12, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-13 00:57:35,738 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-13 00:57:35,799 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 61ms
+2023-06-13 00:57:35,834 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=12, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 138ms
+2023-06-13 00:57:35,837 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-13 00:57:35,852 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-18 22:43:47,891 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 32992 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-18 22:43:47,895 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-18 22:43:48,334 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-18 22:43:48,459 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-18 22:43:48,762 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194d329e
+2023-06-18 22:43:48,763 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-18 22:43:49,069 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 1.537 seconds (process running for 2.063)
+2023-06-18 22:43:49,233 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=13, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-18 22:43:49,289 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-18 22:43:49,347 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 56ms
+2023-06-18 22:43:49,386 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=13, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 132ms
+2023-06-18 22:43:49,389 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-18 22:43:49,404 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-18 22:46:28,502 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 20632 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-18 22:46:28,505 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-18 22:46:28,946 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-18 22:46:29,070 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-18 22:46:29,379 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194d329e
+2023-06-18 22:46:29,381 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-18 22:46:29,635 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 1.53 seconds (process running for 2.068)
+2023-06-18 22:46:29,796 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=14, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-18 22:46:29,859 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-18 22:46:29,923 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 63ms
+2023-06-18 22:46:29,955 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=14, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 133ms
+2023-06-18 22:46:29,958 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-18 22:46:29,972 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 04:11:07,191 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 33340 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-19 04:11:07,358 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 04:11:07,813 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-06-19 04:11:07,944 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 04:11:08,307 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fb392c4
+2023-06-19 04:11:08,308 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 04:11:08,653 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 2.242 seconds (process running for 2.75)
+2023-06-19 04:11:08,830 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] launched with the following parameters: [{'run.id':'{value=15, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}]
+2023-06-19 04:11:08,892 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [primeiroStep]
+2023-06-19 04:11:08,951 INFO o.s.b.c.s.AbstractStep [main] Step: [primeiroStep] executed in 58ms
+2023-06-19 04:11:08,988 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=primeiroJob]] completed with the following parameters: [{'run.id':'{value=15, type=class java.lang.Long, identifying=true}','nome':'{value=Kayque, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 134ms
+2023-06-19 04:11:08,991 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 04:11:09,008 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 04:13:21,158 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 25344 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-19 04:13:21,163 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 04:13:21,779 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 04:13:23,206 ERROR c.z.h.p.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Access denied for user 'user'@'%' to database 'app'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:336) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromDataSource(DatabaseDriver.java:327) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.getDatabaseDriver(PlatformPlaceholderDatabaseDriverResolver.java:137) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:131) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:83) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:72) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:47) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:174) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:550) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) [spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294) [spring-boot-3.1.0.jar:3.1.0]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroprojetospringbatchApplication.main(PrimeiroprojetospringbatchApplication.java:10) [classes/:?]
+2023-06-19 04:13:23,212 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imprimeOlaJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/PrimeiroJobSpringBatchConfig.class]: Unsatisfied dependency expressed through method 'imprimeOlaJob' parameter 0: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception with message: Unable to detect database type
+2023-06-19 04:16:23,420 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 17.0.7 with PID 51768 (E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch\target\classes started by trezi in E:\Dev Repo\Udemy\Spring Batch\udemy-jobs-com-spring-batch\primeirojobspringbatch)
+2023-06-19 04:16:23,426 INFO c.u.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 04:16:24,116 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 04:16:25,528 ERROR c.z.h.p.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Access denied for user 'user'@'%' to database 'app'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:336) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromDataSource(DatabaseDriver.java:327) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.getDatabaseDriver(PlatformPlaceholderDatabaseDriverResolver.java:137) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:131) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:83) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:72) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:47) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:174) ~[spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:550) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) [spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294) [spring-boot-3.1.0.jar:3.1.0]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroprojetospringbatchApplication.main(PrimeiroprojetospringbatchApplication.java:10) [classes/:?]
+2023-06-19 04:16:25,537 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imprimeOlaJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/PrimeiroJobSpringBatchConfig.class]: Unsatisfied dependency expressed through method 'imprimeOlaJob' parameter 0: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception with message: Unable to detect database type

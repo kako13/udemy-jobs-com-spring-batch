@@ -1,0 +1,283 @@
+2023-06-19 02:26:35,621 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 36944 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:26:35,625 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:26:36,310 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:26:36,752 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f1868c9
+2023-06-19 02:26:36,755 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:26:36,908 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'ImprimeParImparStep' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'ImprimeParImparStep' parameter 2: No qualifying bean of type 'org.springframework.batch.item.support.IteratorItemReader<java.lang.Integer>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:26:36,908 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:26:36,935 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:31:16,922 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 38172 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:31:16,933 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:31:17,549 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:31:17,958 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79b2852b
+2023-06-19 02:31:17,961 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:31:18,098 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 2: No qualifying bean of type 'org.springframework.batch.item.support.IteratorItemReader<com.controle.transacional.model.Pessoa>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:31:18,098 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:31:18,105 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:33:08,678 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 11936 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:33:08,685 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:33:09,411 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:33:09,863 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78a0ff63
+2023-06-19 02:33:09,865 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:33:10,070 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:33:10,071 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:33:10,084 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:33:52,676 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 55056 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:33:52,680 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:33:53,278 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:33:53,698 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@288f173f
+2023-06-19 02:33:53,699 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:33:53,876 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:33:53,877 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:33:53,910 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:37:54,765 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 52660 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:37:54,773 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:37:55,376 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:37:55,851 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78a0ff63
+2023-06-19 02:37:55,852 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:37:56,049 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 2: No qualifying bean of type 'org.springframework.batch.item.ItemReader<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:37:56,049 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:37:56,068 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:38:28,742 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 32380 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:38:28,749 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:38:29,386 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:38:29,804 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78a0ff63
+2023-06-19 02:38:29,805 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:38:29,985 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:38:29,985 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:38:30,014 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:39:53,223 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 21076 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:39:53,228 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:39:53,868 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:39:54,307 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78a0ff63
+2023-06-19 02:39:54,308 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:39:54,511 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:39:54,512 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:39:54,519 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:40:27,059 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 54840 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:40:27,067 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:40:27,782 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:40:28,206 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@288f173f
+2023-06-19 02:40:28,207 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:40:28,368 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:40:28,368 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:40:28,388 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:40:47,022 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 28488 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:40:47,025 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:40:47,708 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:40:48,134 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@288f173f
+2023-06-19 02:40:48,136 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:40:48,256 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:40:48,257 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:40:48,275 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:41:06,637 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 25508 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:41:06,645 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:41:07,230 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:41:07,646 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6add8e3f
+2023-06-19 02:41:07,648 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:41:07,821 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:41:07,822 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:41:07,834 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:42:29,188 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 43408 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:42:29,193 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:42:29,884 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:42:30,292 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f3166a
+2023-06-19 02:42:30,293 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:42:30,486 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:42:30,487 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:42:30,517 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:45:53,761 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 32464 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:45:53,765 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:45:54,383 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:45:54,784 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6add8e3f
+2023-06-19 02:45:54,785 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:45:54,973 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:45:54,974 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:45:55,012 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:47:03,634 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 21068 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:47:03,642 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:47:04,384 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:47:04,752 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@288f173f
+2023-06-19 02:47:04,753 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:47:04,879 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:47:04,880 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:47:04,890 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:48:25,273 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 34272 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:48:25,282 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:48:25,885 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:48:26,302 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3337d04c
+2023-06-19 02:48:26,304 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:48:26,416 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 2: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-19 02:48:26,416 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:48:26,449 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:49:42,774 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 3472 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:49:42,779 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:49:43,497 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:49:43,893 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78a0ff63
+2023-06-19 02:49:43,895 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:49:44,067 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("writer")}
+2023-06-19 02:49:44,068 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:49:44,100 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 02:50:55,146 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 35036 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 02:50:55,150 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 02:50:55,825 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 02:50:56,247 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67cefd84
+2023-06-19 02:50:56,248 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 02:50:56,415 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'jobPessoa' parameter 1: Error creating bean with name 'stepPessoa' defined in class path resource [com/controle/transacional/model/BatchConfig.class]: Unsatisfied dependency expressed through method 'stepPessoa' parameter 3: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("writer")}
+2023-06-19 02:50:56,416 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-06-19 02:50:56,425 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-06-19 09:48:44,033 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 56232 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 09:48:44,037 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 09:48:44,699 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 09:48:45,140 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47406941
+2023-06-19 09:48:45,142 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 09:48:45,362 WARN o.s.b.c.l.AbstractListenerFactoryBean [main] org.springframework.batch.item.ItemWriter is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2023-06-19 09:48:45,558 INFO c.c.t.TransacionalApplication [main] Started TransacionalApplication in 2.387 seconds (process running for 2.981)
+2023-06-19 09:48:45,575 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-06-19 09:48:45,606 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@516592b1
+2023-06-19 09:48:45,606 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-06-19 09:48:45,843 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] launched with the following parameters: [{'run.id':'{value=31, type=class java.lang.Long, identifying=true}'}]
+2023-06-19 09:48:45,931 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [stepPessoa]
+2023-06-19 09:48:46,344 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step stepPessoa in job jobPessoa
+org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [INSERT INTO pessoa (id, nome, email, data_nascimento, idade) VALUES (?, ?, ?, ?, ?)]; Duplicate entry '200' for key 'pessoa.PRIMARY'
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:103) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1538) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:691) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1034) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.batchUpdate(NamedParameterJdbcTemplate.java:373) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.batch.item.database.JdbcBatchItemWriter.write(JdbcBatchItemWriter.java:190) ~[spring-batch-infrastructure-5.0.2.jar:5.0.2]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:137) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.0.9.jar:6.0.9]
+	at jdk.proxy2.$Proxy45.write(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.writeItems(SimpleChunkProcessor.java:203) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doWrite(SimpleChunkProcessor.java:170) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.write(SimpleChunkProcessor.java:297) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:227) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:389) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:313) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:256) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:362) ~[spring-batch-infrastructure-5.0.2.jar:5.0.2]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.0.2.jar:5.0.2]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:139) ~[spring-batch-infrastructure-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:241) ~[spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:227) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:417) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:316) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59) [spring-batch-core-5.0.2.jar:5.0.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) [spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:178) [spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:166) [spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:161) [spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:156) [spring-boot-autoconfigure-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:761) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305) [spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294) [spring-boot-3.1.0.jar:3.1.0]
+	at com.controle.transacional.TransacionalApplication.main(TransacionalApplication.java:10) [classes/:?]
+Caused by: java.sql.BatchUpdateException: Duplicate entry '200' for key 'pessoa.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createBatchUpdateException(SQLError.java:224) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchSerially(ClientPreparedStatement.java:816) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal(ClientPreparedStatement.java:418) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeBatch(StatementImpl.java:795) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeBatch(ProxyStatement.java:127) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeBatch(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:?]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$batchUpdate$4(JdbcTemplate.java:1047) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	... 50 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '200' for key 'pessoa.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchSerially(ClientPreparedStatement.java:795) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal(ClientPreparedStatement.java:418) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeBatch(StatementImpl.java:795) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeBatch(ProxyStatement.java:127) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeBatch(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:?]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$batchUpdate$4(JdbcTemplate.java:1047) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ~[spring-jdbc-6.0.9.jar:6.0.9]
+	... 50 more
+2023-06-19 09:48:46,353 INFO o.s.b.c.s.AbstractStep [main] Step: [stepPessoa] executed in 421ms
+2023-06-19 09:48:46,398 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] completed with the following parameters: [{'run.id':'{value=31, type=class java.lang.Long, identifying=true}'}] and the following status: [FAILED] in 528ms
+2023-06-19 09:48:46,402 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-06-19 09:48:46,417 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-06-19 09:48:46,417 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 09:48:46,431 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 09:49:19,449 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 41728 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 09:49:19,467 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 09:49:20,178 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 09:49:20,661 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61ecbee9
+2023-06-19 09:49:20,665 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 09:49:20,903 WARN o.s.b.c.l.AbstractListenerFactoryBean [main] org.springframework.batch.item.ItemWriter is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2023-06-19 09:49:21,114 INFO c.c.t.TransacionalApplication [main] Started TransacionalApplication in 2.439 seconds (process running for 3.042)
+2023-06-19 09:49:21,127 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-06-19 09:49:21,155 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cffcc61
+2023-06-19 09:49:21,155 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-06-19 09:49:21,377 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] launched with the following parameters: [{'run.id':'{value=32, type=class java.lang.Long, identifying=true}'}]
+2023-06-19 09:49:21,456 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [stepPessoa]
+2023-06-19 09:49:33,021 INFO o.s.b.c.s.AbstractStep [main] Step: [stepPessoa] executed in 11s563ms
+2023-06-19 09:49:33,056 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] completed with the following parameters: [{'run.id':'{value=32, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 11s652ms
+2023-06-19 09:49:33,059 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-06-19 09:49:33,075 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-06-19 09:49:33,075 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 09:49:33,088 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 10:08:38,504 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 46776 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 10:08:38,509 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 10:08:38,673 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.controle.transacional.TransacionalApplication]
+2023-06-19 10:09:53,732 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 43272 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 10:09:53,735 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 10:09:54,477 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 10:09:54,930 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194d329e
+2023-06-19 10:09:54,932 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 10:09:55,085 WARN o.s.b.c.l.AbstractListenerFactoryBean [main] org.springframework.batch.item.ItemWriter is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2023-06-19 10:09:55,264 INFO c.c.t.TransacionalApplication [main] Started TransacionalApplication in 2.167 seconds (process running for 2.775)
+2023-06-19 10:09:55,287 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-06-19 10:09:55,314 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f59ea8c
+2023-06-19 10:09:55,314 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-06-19 10:09:55,593 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] launched with the following parameters: [{'run.id':'{value=33, type=class java.lang.Long, identifying=true}'}]
+2023-06-19 10:09:55,667 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [stepPessoa]
+2023-06-19 10:10:07,456 INFO o.s.b.c.s.AbstractStep [main] Step: [stepPessoa] executed in 11s788ms
+2023-06-19 10:10:07,493 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] completed with the following parameters: [{'run.id':'{value=33, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 11s878ms
+2023-06-19 10:10:07,496 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-06-19 10:10:07,512 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-06-19 10:10:07,512 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 10:10:07,525 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-19 10:11:06,402 INFO c.c.t.TransacionalApplication [main] Starting TransacionalApplication using Java 17.0.7 with PID 10456 (C:\Users\trezi\Downloads\transacional\target\classes started by trezi in C:\Users\trezi\Downloads\transacional)
+2023-06-19 10:11:06,405 INFO c.c.t.TransacionalApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-19 10:11:07,209 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-19 10:11:07,734 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194d329e
+2023-06-19 10:11:07,738 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-19 10:11:07,906 WARN o.s.b.c.l.AbstractListenerFactoryBean [main] org.springframework.batch.item.ItemWriter is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2023-06-19 10:11:08,108 INFO c.c.t.TransacionalApplication [main] Started TransacionalApplication in 2.358 seconds (process running for 3.006)
+2023-06-19 10:11:08,127 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-06-19 10:11:08,155 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f59ea8c
+2023-06-19 10:11:08,156 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-06-19 10:11:08,446 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] launched with the following parameters: [{'run.id':'{value=34, type=class java.lang.Long, identifying=true}'}]
+2023-06-19 10:11:08,545 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [stepPessoa]
+2023-06-19 10:11:20,454 INFO o.s.b.c.s.AbstractStep [main] Step: [stepPessoa] executed in 11s908ms
+2023-06-19 10:11:20,493 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobPessoa]] completed with the following parameters: [{'run.id':'{value=34, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 12s4ms
+2023-06-19 10:11:20,497 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-06-19 10:11:20,512 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-06-19 10:11:20,512 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-19 10:11:20,525 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
