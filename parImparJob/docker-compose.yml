@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  mysql:
+    container_name: mysql-udemy-spring-batch
+    image: mysql/mysql-server:8.0
+    ports:
+      - "3306:3306/tcp"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: spring_batch
+        MYSQL_USER: user
+        MYSQL_PASSWORD: 123456
+    volumes:
+      - ./scripts_sql/root_privileges_manual.sh:/docker-entrypoint-initdb.d/root_privileges_manual.sh
