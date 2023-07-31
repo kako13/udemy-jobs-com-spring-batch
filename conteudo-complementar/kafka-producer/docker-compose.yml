@@ -1,0 +1,60 @@
+version: '3'
+services:
+
+  mysql:
+    container_name: mysql-udemy-spring-batch
+    image: mysql/mysql-server:8.0
+    ports:
+      - "3306:3306/tcp"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: spring_batch
+        MYSQL_USER: user
+        MYSQL_PASSWORD: 123456
+    volumes:
+      - ./scripts_sql/root_privileges_manual.sh:/docker-entrypoint-initdb.d/root_privileges_manual.sh
+
+  zookeeper:
+    container_name: zookeeper-latest
+    image: bitnami/zookeeper:latest
+    ports:
+      - "2181:2181"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+      - ZOOKEEPER_CLIENT_PORT=2181
+
+  # reachable on 9092 from the host and on 29092 from inside docker compose
+  kafka:
+    container_name: kafka-latest
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092:9092
+    environment:
+#      KAFKA_BROKER_ID: 1
+      KAFKA_BROKER_ID: 0
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://kafka:19092,LISTENER_DOCKER_EXTERNAL://${DOCKER_HOST_IP:-127.0.0.1}:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      SPRING_OUTPUT_ANSI_ENABLED: ALWAYS
+
+  init-kafka:
+    container_name: init-kafka
+    image: bitnami/kafka:3.0
+    depends_on:
+      - kafka
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "
+      # blocks until kafka is reachable
+      # kafka-topics --bootstrap-server kafka:9092 --list
+
+      echo -e 'Creating kafka topics to Udemy Spring Batch Kafka Consumer'
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic NEW_PESSOA --replication-factor 1 --partitions 1
+
+      echo -e 'Successfully created the following topics:'
+      kafka-topics --bootstrap-server kafka:9092 --list
+      "
