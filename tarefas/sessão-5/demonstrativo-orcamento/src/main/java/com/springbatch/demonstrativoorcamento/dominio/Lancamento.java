@@ -8,14 +8,14 @@ import java.util.Comparator;
 import java.util.List;
 
 @Data
-public class Despesa {
+public class Lancamento {
 
     private String codigoNatureza;
     private String descricaoNatureza;
     private String descricaoItem;
     private String data;
     private BigDecimal valor;
-    private List<Detalhe> detalhes = new ArrayList<>();
+    private List<Item> items = new ArrayList<>();
 
     @Override
     public String toString() {
@@ -28,7 +28,7 @@ public class Despesa {
     }
 
     private void formataElementos(StringBuilder stringBuilder) {
-        detalhes.stream().sorted(Comparator.comparing(Detalhe::getData)).forEach(stringBuilder::append);
+        items.stream().sorted(Comparator.comparing(Item::getData)).forEach(stringBuilder::append);
     }
 
     private void formataCabecalho(StringBuilder stringBuilder) {
@@ -37,8 +37,8 @@ public class Despesa {
     }
 
     private BigDecimal somaValores() {
-        return detalhes.stream()
-                .map(Detalhe::getValor)
+        return items.stream()
+                .map(Item::getValor)
                 .reduce(BigDecimal::add).get();
     }
 }

@@ -1,6 +1,6 @@
 package com.springbatch.demonstrativoorcamento.writer;
 
-import com.springbatch.demonstrativoorcamento.dominio.Despesa;
+import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class DemonstrativoOrcamentarioWriter {
 
     @Bean
-    public ItemWriter<Despesa> demonstrativoItemWriter() {
+    public ItemWriter<Lancamento> demonstrativoItemWriter() {
 
         return item -> item.forEach(System.out::println);
     }

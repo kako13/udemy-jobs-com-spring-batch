@@ -1,8 +1,8 @@
 package com.springbatch.demonstrativoorcamento.reader;
 
 
-import com.springbatch.demonstrativoorcamento.dominio.Despesa;
-import com.springbatch.demonstrativoorcamento.dominio.Detalhe;
+import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
+import com.springbatch.demonstrativoorcamento.dominio.Item;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemStreamReader;
@@ -12,34 +12,34 @@ import org.springframework.core.io.Resource;
 
 import java.util.Objects;
 
-public class DemonstrativoOrcamentarioItemDespesaReader implements ItemStreamReader<Despesa>, ResourceAwareItemReaderItemStream<Despesa> {
+public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStreamReader<Lancamento>, ResourceAwareItemReaderItemStream<Lancamento> {
 
-    private Despesa objetoAtual;
-    private FlatFileItemReader<Despesa> delegate;
+    private Lancamento objetoAtual;
+    private FlatFileItemReader<Lancamento> delegate;
 
-    public DemonstrativoOrcamentarioItemDespesaReader(FlatFileItemReader<Despesa> delegate) {
+    public DemonstrativoOrcamentarioItemLancamentoReader(FlatFileItemReader<Lancamento> delegate) {
         this.delegate = delegate;
     }
 
     @Override
-    public Despesa read() throws Exception {
+    public Lancamento read() throws Exception {
         if (objetoAtual == null)
             objetoAtual = delegate.read(); // ler objeto
 
 
-        Despesa despesa = objetoAtual;
+        Lancamento lancamento = objetoAtual;
         objetoAtual = null;
 
-        if (despesa != null) {
-            despesa.getDetalhes().add(Detalhe.fromDespesa(despesa));
-            while (peek() != null && Objects.equals(objetoAtual.getCodigoNatureza(), despesa.getCodigoNatureza())) {
-                    despesa.getDetalhes().add(Detalhe.fromDespesa(objetoAtual));
+        if (lancamento != null) {
+            lancamento.getItems().add(Item.fromLancamento(lancamento));
+            while (peek() != null && Objects.equals(objetoAtual.getCodigoNatureza(), lancamento.getCodigoNatureza())) {
+                    lancamento.getItems().add(Item.fromLancamento(objetoAtual));
             }
         }
-        return despesa;
+        return lancamento;
     }
 
-    private Despesa peek() throws Exception {
+    private Lancamento peek() throws Exception {
         objetoAtual = delegate.read();//leitura do proximo item
         return objetoAtual;
     }

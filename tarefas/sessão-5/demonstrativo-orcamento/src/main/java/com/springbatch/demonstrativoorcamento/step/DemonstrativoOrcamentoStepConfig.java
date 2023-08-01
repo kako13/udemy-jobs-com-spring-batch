@@ -1,6 +1,6 @@
 package com.springbatch.demonstrativoorcamento.step;
 
-import com.springbatch.demonstrativoorcamento.dominio.Despesa;
+import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
@@ -16,12 +16,12 @@ public class DemonstrativoOrcamentoStepConfig {
     @Bean
     public Step demonstrativoOrcamentarioStep(JobRepository jobRepository,
                                               PlatformTransactionManager transactionManager,
-                                              MultiResourceItemReader<Despesa> itemReader,
+                                              MultiResourceItemReader<Lancamento> itemReader,
                                               ItemWriter itemWriter) {
 
         return new StepBuilder("demonstrativoOrcamentarioStep", jobRepository)
                                 .chunk(2, transactionManager)
-//                                .reader(new DemonstrativoOrcamentarioItemDespesaReader(flatFileItemReader)) // sem multiplos arquivos
+//                                .reader(new DemonstrativoOrcamentarioItemLancamentoReader(flatFileItemReader)) // sem multiplos arquivos
                                 .reader(itemReader)
                                 .writer(itemWriter)
                                 .build();

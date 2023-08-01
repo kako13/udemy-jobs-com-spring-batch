@@ -7,16 +7,16 @@ import java.math.BigDecimal;
 
 @Builder
 @Data
-public class Detalhe {
+public class Item {
     private String data;
     private String descricaoItem;
     private BigDecimal valor;
 
-    public static Detalhe fromDespesa(Despesa despesa) {
-        return Detalhe.builder()
-                .descricaoItem(despesa.getDescricaoItem())
-                .data(despesa.getData())
-                .valor(despesa.getValor())
+    public static Item fromLancamento(Lancamento lancamento) {
+        return Item.builder()
+                .descricaoItem(lancamento.getDescricaoItem())
+                .data(lancamento.getData())
+                .valor(lancamento.getValor())
                 .build();
     }
 

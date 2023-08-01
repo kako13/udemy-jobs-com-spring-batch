@@ -1,7 +1,7 @@
 package com.springbatch.demonstrativoorcamento.reader;
 
 
-import com.springbatch.demonstrativoorcamento.dominio.Despesa;
+import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
@@ -15,15 +15,15 @@ public class DemonstrativoOrcamentarioItemReaderConfig {
 
     @StepScope
     @Bean
-    public FlatFileItemReader<Despesa> fileItemReader(@Value("#{jobParameters['arquivosDespesas']}") Resource lancamentos) {
+    public FlatFileItemReader<Lancamento> fileItemReader(@Value("#{jobParameters['arquivosLancamentos']}") Resource lancamentos) {
 
-        return new FlatFileItemReaderBuilder<Despesa>()
+        return new FlatFileItemReaderBuilder<Lancamento>()
                                     .resource(lancamentos)
                                     .name("fileItemReader")
                                     .delimited()
                                         .delimiter(",")
                                         .names("codigoNatureza", "descricaoNatureza", "descricaoItem", "data", "valor")
-                                    .targetType(Despesa.class)
+                                    .targetType(Lancamento.class)
                                     .build();
     }
 }
