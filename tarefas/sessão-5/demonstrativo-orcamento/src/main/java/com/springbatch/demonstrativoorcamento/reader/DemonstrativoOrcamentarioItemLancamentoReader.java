@@ -6,18 +6,16 @@ import com.springbatch.demonstrativoorcamento.dominio.Item;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemStreamReader;
-import org.springframework.batch.item.file.FlatFileItemReader;
-import org.springframework.batch.item.file.ResourceAwareItemReaderItemStream;
-import org.springframework.core.io.Resource;
+import org.springframework.batch.item.database.JdbcCursorItemReader;
 
 import java.util.Objects;
 
-public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStreamReader<Lancamento>, ResourceAwareItemReaderItemStream<Lancamento> {
+public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStreamReader<Lancamento> {
 
     private Lancamento objetoAtual;
-    private FlatFileItemReader<Lancamento> delegate;
+    private JdbcCursorItemReader<Lancamento> delegate;
 
-    public DemonstrativoOrcamentarioItemLancamentoReader(FlatFileItemReader<Lancamento> delegate) {
+    public DemonstrativoOrcamentarioItemLancamentoReader(JdbcCursorItemReader<Lancamento> delegate) {
         this.delegate = delegate;
     }
 
@@ -32,7 +30,7 @@ public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStream
 
         if (lancamento != null) {
             lancamento.getItems().add(Item.fromLancamento(lancamento));
-            while (peek() != null && Objects.equals(objetoAtual.getCodigoNatureza(), lancamento.getCodigoNatureza())) {
+            while (peek() != null && Objects.equals(objetoAtual.getCodigoNaturezaDespesa(), lancamento.getCodigoNaturezaDespesa())) {
                     lancamento.getItems().add(Item.fromLancamento(objetoAtual));
             }
         }
@@ -57,10 +55,5 @@ public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStream
     @Override
     public void close() throws ItemStreamException {
         delegate.close();
-    }
-
-    @Override
-    public void setResource(Resource resource) {
-        delegate.setResource(resource);
     }
 }

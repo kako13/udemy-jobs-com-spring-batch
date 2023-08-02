@@ -22,7 +22,7 @@ public class MultiplosArtquivosDemonstrativoItemReaderConfig {
         return new MultiResourceItemReaderBuilder<Lancamento>()
                 .name("multiplosArquivosDemonstrativoReader")
                 .resources(arquivosClientes)
-                .delegate(new DemonstrativoOrcamentarioItemLancamentoReader(itemReader))
+//                .delegate(new DemonstrativoOrcamentarioItemLancamentoReader(itemReader))
                 .build();
     }
 }

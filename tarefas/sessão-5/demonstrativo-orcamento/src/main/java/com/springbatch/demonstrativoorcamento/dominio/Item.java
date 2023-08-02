@@ -14,9 +14,9 @@ public class Item {
 
     public static Item fromLancamento(Lancamento lancamento) {
         return Item.builder()
-                .descricaoItem(lancamento.getDescricaoItem())
-                .data(lancamento.getData())
-                .valor(lancamento.getValor())
+                .descricaoItem(lancamento.getDescricaoLancamento())
+                .data(lancamento.getDataLancamento())
+                .valor(lancamento.getValorLancamento())
                 .build();
     }
 

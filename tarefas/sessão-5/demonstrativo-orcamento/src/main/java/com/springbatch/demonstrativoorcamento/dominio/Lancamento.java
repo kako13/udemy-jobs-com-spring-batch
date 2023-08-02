@@ -10,11 +10,11 @@ import java.util.List;
 @Data
 public class Lancamento {
 
-    private String codigoNatureza;
-    private String descricaoNatureza;
-    private String descricaoItem;
-    private String data;
-    private BigDecimal valor;
+    private String codigoNaturezaDespesa;
+    private String descricaoNaturezaDespesa;
+    private String descricaoLancamento;
+    private String dataLancamento;
+    private BigDecimal valorLancamento;
     private List<Item> items = new ArrayList<>();
 
     @Override
@@ -33,7 +33,7 @@ public class Lancamento {
 
     private void formataCabecalho(StringBuilder stringBuilder) {
         stringBuilder.append("---- Demonstrativo orçamentário ----\n");
-        stringBuilder.append(String.format("[%s] %s - R$ %s\n", codigoNatureza, descricaoNatureza, somaValores()));
+        stringBuilder.append(String.format("[%s] %s - R$ %s\n", codigoNaturezaDespesa, descricaoNaturezaDespesa, somaValores()));
     }
 
     private BigDecimal somaValores() {
