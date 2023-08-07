@@ -1,15 +1,15 @@
 package com.springbatch.demonstrativoorcamento.writer;
 
-import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
+import com.springbatch.demonstrativoorcamento.dominio.GrupoLancamento;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DemonstrativoOrcamentarioWriter {
+public class DemonstrativoOrcamentarioWriterConfig {
 
     @Bean
-    public ItemWriter<Lancamento> demonstrativoItemWriter() {
+    public ItemWriter<GrupoLancamento> demonstrativoItemWriter() {
 
         return item -> item.forEach(System.out::println);
     }

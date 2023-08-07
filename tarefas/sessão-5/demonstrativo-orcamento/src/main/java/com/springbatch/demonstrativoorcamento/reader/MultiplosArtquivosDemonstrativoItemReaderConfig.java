@@ -1,8 +1,7 @@
 package com.springbatch.demonstrativoorcamento.reader;
 
-import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
+import com.springbatch.demonstrativoorcamento.dominio.GrupoLancamento;
 import org.springframework.batch.core.configuration.annotation.StepScope;
-import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.MultiResourceItemReader;
 import org.springframework.batch.item.file.builder.MultiResourceItemReaderBuilder;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,14 +14,14 @@ public class MultiplosArtquivosDemonstrativoItemReaderConfig {
 
     @StepScope
     @Bean
-    public MultiResourceItemReader<Lancamento> multiplosArquivosDemonstrativoReader(
+    public MultiResourceItemReader<GrupoLancamento> multiplosArquivosDemonstrativoReader(
             @Value("#{jobParameters['arquivosLancamentos']}") Resource[] arquivosClientes,
-            FlatFileItemReader<Lancamento> itemReader) {
+            DemonstrativoOrcamentarioItemLancamentoReader itemReader) {
 
-        return new MultiResourceItemReaderBuilder<Lancamento>()
+        return new MultiResourceItemReaderBuilder<GrupoLancamento>()
                 .name("multiplosArquivosDemonstrativoReader")
                 .resources(arquivosClientes)
-//                .delegate(new DemonstrativoOrcamentarioItemLancamentoReader(itemReader))
+                .delegate(itemReader)
                 .build();
     }
 }

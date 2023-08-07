@@ -1,43 +1,54 @@
 package com.springbatch.demonstrativoorcamento.reader;
 
 
-import com.springbatch.demonstrativoorcamento.dominio.Lancamento;
-import com.springbatch.demonstrativoorcamento.dominio.Item;
+import com.springbatch.demonstrativoorcamento.dominio.GrupoLancamento;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemStreamReader;
 import org.springframework.batch.item.database.JdbcCursorItemReader;
+import org.springframework.batch.item.file.ResourceAwareItemReaderItemStream;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
-public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStreamReader<Lancamento> {
+@Component
+public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStreamReader<GrupoLancamento>, ResourceAwareItemReaderItemStream<GrupoLancamento> {
 
-    private Lancamento objetoAtual;
-    private JdbcCursorItemReader<Lancamento> delegate;
+    private GrupoLancamento objetoAtual;
+    @Autowired
+    // Esse aqui lê do arquivo
+//    private FlatFileItemReader<GrupoLancamento> delegate;
+    // Esse aqui lê do banco
+    private JdbcCursorItemReader<GrupoLancamento> delegate;
 
-    public DemonstrativoOrcamentarioItemLancamentoReader(JdbcCursorItemReader<Lancamento> delegate) {
-        this.delegate = delegate;
-    }
 
     @Override
-    public Lancamento read() throws Exception {
+    public GrupoLancamento read() throws Exception {
         if (objetoAtual == null)
             objetoAtual = delegate.read(); // ler objeto
 
 
-        Lancamento lancamento = objetoAtual;
+        GrupoLancamento grupoLancamento = objetoAtual;
         objetoAtual = null;
 
-        if (lancamento != null) {
-            lancamento.getItems().add(Item.fromLancamento(lancamento));
-            while (peek() != null && Objects.equals(objetoAtual.getCodigoNaturezaDespesa(), lancamento.getCodigoNaturezaDespesa())) {
-                    lancamento.getItems().add(Item.fromLancamento(objetoAtual));
+        if (grupoLancamento != null) {
+            grupoLancamento.setLancamentos(new ArrayList<>());
+            while (isLancamentoRelacionado(grupoLancamento)) {
+                grupoLancamento.getLancamentos().add(objetoAtual.getLancamentoAux());
             }
+            grupoLancamento.getLancamentos().add(grupoLancamento.getLancamentoAux());
         }
-        return lancamento;
+        return grupoLancamento;
     }
 
-    private Lancamento peek() throws Exception {
+    private boolean isLancamentoRelacionado(GrupoLancamento grupoLancamento) throws Exception {
+        return peek() != null && Objects.equals(objetoAtual.getCodigoNaturezaDespesa(), grupoLancamento.getCodigoNaturezaDespesa());
+    }
+
+    private GrupoLancamento peek() throws Exception {
         objetoAtual = delegate.read();//leitura do proximo item
         return objetoAtual;
     }
@@ -55,5 +66,11 @@ public class DemonstrativoOrcamentarioItemLancamentoReader implements ItemStream
     @Override
     public void close() throws ItemStreamException {
         delegate.close();
+    }
+
+    @Override
+    public void setResource(Resource resource) {
+        // Descomentar para a leitura de arquivo
+//        delegate.setResource(resource);
     }
 }
